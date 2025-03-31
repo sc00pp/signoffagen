@@ -87,7 +87,6 @@ def segment_text():
         t_start = 0
         filtered_list = []
 
-
         pos_theNameIsThe = re.split(r'\Wthe name is the\W', transcript)
         pos_theNameIsThe = len_script - len(pos_theNameIsThe[-1])
         pos_theNameIs = re.split(r'\Wthe name is\W', transcript)
@@ -148,7 +147,7 @@ def segment_text():
     df['end_link'] = 'https://youtu.be/'+df['href']+'&t='+df['t_end'].astype(str)
 
     df = pd.merge(df,df_pre,on='href',how='outer')
-    df = df.sort_values('len_window', ascending=False)
+    df = df.sort_values('t_span', ascending=False)
 
     df.to_csv('data/db.csv')
         
