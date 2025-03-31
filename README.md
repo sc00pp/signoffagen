@@ -48,8 +48,3 @@ branch. Pull requests are welcomed.
 - ThePrimeagen on GitHub: https://github.com/theprimeagen
 - Repository: https://github.com/sc00pp/signoffagen
 - jdepoix's YouTube Transcript API tool: https://github.com/jdepoix/youtube-transcript-api
-
-
-## Licensing
-
-The code in this project is licensed under MIT license.
