@@ -132,8 +132,8 @@ def segment_text():
         }
 
         db.append(episode)
-    with open('data/db.json', 'w') as fp:
-        json.dump(db,fp,indent=4)
+    # with open('data/db.json', 'w') as fp:
+    #     json.dump(db,fp,indent=4)
 
     df = pd.DataFrame(db)
     df_pre = pd.read_csv('data/db.csv')
